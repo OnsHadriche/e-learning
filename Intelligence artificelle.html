@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Intelligence Artificiel</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="Intelligence artificelle.css">
+        <link rel="stylesheet" href="HomeStyle3.css">
+        <script src="Intelligence artificelle.js"></script>
+      
+    </head>
+    <body>
+        <header class="header_main">
+            
+            <nav>
+                <a href="Home3.html" >
+
+                    <img src="logo\DEAcademy.PNG" width="160" height="160" id="logo">
+                </a>
+                <ul class="ulx">
+                    <li id="button_recherche">
+                        <input type="text"  placeholder="Rechercher" class="text_btn">
+                        <a href="#" class="recherche_btn" ><i class="fas fa-search"></i></a>
+                    </li>
+                    <li >
+        
+                        <button class="c" onclick="drop();" onblur="hold();" id="textColor">Cours</button>
+                        <ul class="Catégories" id="dropDoawn1">
+                            <li><a href="Developement.html">Développement</a></li>
+                            <li><a href="">Business</a> </li>
+                            <li><a href="">Finance et comptabilité </a></li>
+                            <li><a href="">Informatique et logiciels</a></li>
+                            <li><a href="">Productivité bureatique</a></li>
+                            <li><a href="Devep_Personnel.html">Développement personnel</a></li>
+                            <li><a href="design.html">Design</a></li>
+                            <li><a href="">Marketing</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="DEAcademy pour entreprises.html" target="_blank">
+                            <button class="c" onmouseover="clickOn();" onmouseout="clickOff();" id="ClickEntreprise">DEAcademy pour Entreprise</button>
+                        </a>
+                    </li>
+    
+                    <li >
+                        <a href="Enseigner.html" target="_blank">
+                            <button class="c" onmouseover="clickOn1();" onmouseout="clickOff1();" id="ClickEntreprise1">Enseigner sur DEAcademy</button>
+                        </a>
+                    </li>
+                    <li id="panier">
+                        <i class="fas fa-shopping-cart" title="Panier"></i>
+                    </li>
+                    <a href="connexion.html" target="_blank">
+                        <li> <button id="a"> connecter </button></li>
+                    </a>  
+                    <a href="inscription.html" target="_blank">
+                        <li><button id= "a">S'inscrire</button></li>
+                    </a>
+                </ul>
+            </nav>
+        </header>
+        <div class="container_titre">
+                
+            <h1 id="Grand_titre">Intelligence Artificiel</h1>
+            <p id="pg_titre">Découvrez nos cours </p>
+        </div>
+        <section class="Choix">
+            <aside class="aside_1">
+                <h3 class="filtre">Filtrer par</h3>
+                <div class="conatainer_group">
+                    <h3 class="filtre">Théme</h3>
+                    <div>
+                        <a href="#ML">
+                            <input type="checkbox" id="ML">
+                            <label for="ML">Apprentisage automatique</label>
+                        </a>
+                        <br>
+                        <input type="checkbox" id="DL">
+                        <label for="DL">Apprentissage profond</label>
+                        <br>
+                        <input type="checkbox" id="SD">
+                        <label for="SD">Science de données</label>
+                        <br>
+                        <input type="checkbox" id="AD">
+                        <label for="AD"> Analyse de données</label>
+                        <br>
+                        <input type="checkbox" id="BD">
+                        <label for="BD">Big Data</label>
+                        <br>
+                        <input type="checkbox" id="VO">
+                        <label for="VO">Vision par ordinateur</label>
+                        <br>
+                        <input type="checkbox" id="Rb">
+                        <label for="Rb">Robotiques</label>
+                    </div>
+                    <h3 class="filtre">Niveau</h3>
+                    <div>
+                        <input type="checkbox" id="TN">
+                        <label for="TN">Tous les niveaux</label>
+                        <br>
+                        <input type="checkbox" id="Debut">
+                        <label for="Debut">Débutant</label>
+                        <br>
+                        <input type="checkbox" id="Inter">
+                        <label for="Inter">Intermédiare</label>
+                        <br>
+                        <input type="checkbox" id="Av">
+                        <label for="Av">Avancée</label>
+                    </div>
+                    <h3 class="filtre">Langue</h3>
+                    <div>
+                        <input type="checkbox" id="Ar">
+                        <label for="Ar">Arabe</label>
+                        <br>
+                        <input type="checkbox" id="Fr">
+                        <label for="Fr">Français</label>
+                        <br>
+                        <input type="checkbox" id="Ang">
+                        <label for="Ang">Anglais</label>
+                    </div>
+                    <h3 class="filtre">Mode d'apprentissage</h3>
+                    <div>
+                        <input type="checkbox" id="Appr">
+                        <label for="Appr">Cours</label>
+                        <br>
+                        <input type="checkbox" id="Sp">
+                        <label for="Sp">Spécialisation</label>
+                        <br>
+                        <input type="checkbox" id="Pg">
+                        <label for="Pg">Projets guidés</label>
+                    </div>
+                    <h3 class="filtre">Prix</h3>
+                    <div>
+                        <input type="checkbox" id="Pay">
+                        <label for="Pay">Payant</label>
+                        <br>
+                        <input type="checkbox" id="Grat">
+                        <label for="Grat">Gratuit</label>
+                    </div>
+                </div>
+            </aside >
+            <article class="cours_choix">
+                <table>
+                    <tr onmouseover="apparaitre();" onmouseout="disparaitre();">
+                        <td >
+                            <img src="formation/AI/AI.jpg" width="300" height="200" >
+                        </td>
+                        <td > 
+
+                            <h2>Les fondamentales d'apprentissage automatique</h2>
+                            <p>
+                                Apprenez à développer des applications du monde réel alimentées 
+                                par des nouvelles technologies d'Intelligence Artificiel
+                                <h5>8 heures au total. Débutant.</h5>
+                                <span>
+                                    <h4>89.99dt</h4>
+                                </span>
+                            </p>
+                        </td>                    
+                    </tr>
+                    <div class="container_box" id="box_app" >
+                            <h3>Ce que vous allez apprendre</h3>
+                            <ul>
+                                <li>
+                                    Comprendre l'importance de l'apprentissage automatique 
+                                    <abbr title="Machine Learning">"ML"</abbr>
+                                </li>
+                                <li>
+                                    Apprendre à implimenter les algorithmes de base de l'apprentissage automatique en Python
+                                </li>
+                                <li>
+                                    appliquer les algorithmes de classification et de regression 
+                                </li>
+                            </ul>
+                    </div>
+                    <tr onmouseover="apparaitre1();" onmouseout="disparaitre1();">
+                        <td>
+                            <img src="formation/AI/M4.png" width="300" height="200">
+                        </td>
+                        <td>
+                            <h2>Programmation Python pour apprentissage automatique, analyse des données</h2>
+                            <p>
+                                Apprenez à créer des algorithmes d'apprentissage automatique et 
+                                à analyser des données en Python.
+                                <h5>7,5 heures au total. Tous les niveaux.</h5>
+                                <span>
+                                    <h4>89.99dt</h4>
+                                </span>   
+                            </p>
+                        </td>
+                    </tr>
+                    <div class="container_box1" id="box_app1" >
+                        <h3>Ce que vous allez apprendre</h3>
+                        <ul>
+                            <li>Les fondamentaux du <abbr title="Machine Learning">"ML"</abbr> avec Python </li>
+                            <li>L'algorithme des k plus proches voisins (k Nearest Neighbors)</li>
+                            <li>Réseau neurone</li>
+                        </ul>
+                    </div>
+                    <tr onmouseover="apparaitre2();" onmouseout="disparaitre2();">
+                        <td>
+                            <img src="formation/AI/ML1.jfif" width="300" height="200">
+                        </td>
+                        <td>
+                            <h2>Introduction apprentissage automatique</h2>
+                            <p>
+                                Apprenez de comprendre les algorithmes d'apprentissage automatique
+                                <h5>3 heures au total.Tous les niveaux</h5>
+                                <span>
+                                    <h4>29.99dt</h4>
+                                </span>   
+                            </p>
+                        </td>
+                    </tr>
+                    <div class="container_box2" id="box_app2" >
+                        <h3>Ce que vous allez apprendre</h3>
+                        <ul>
+                            <li>Comprendre les concepts les plus importants de l'IA et de l'apprentissage automatique</li>
+                            <li>
+                                Connaître les différents types de Machine Learning
+                            </li>
+                            <li>
+                                Introduction aux techniques d'apprentissage automatique
+                            </li>
+                        </ul>
+                    </div>
+                    <tr onmouseover="apparaitre3();" onmouseout="disparaitre3();">
+                        <td>
+                            <img src="formation/AI/M8.jpg" width="300" height="200">
+                        </td>
+                        <td>
+                            <h2>Intelligence Artificiel: Apprentissage automatique</h2>
+                            <p>
+                                Apprenez toutes les compétences avancées dont vous avez
+                                besoin pour effectuer diverses tâches d'apprentissage automatique dans le monde réel.
+                                <h6>4 heures au total. Intermédiare</h6>
+                                <span>
+                                    <h4>39.99dt</h4>
+                                </span>   
+                            </p>
+                        </td>
+                    </tr>
+                    <div class="container_box3" id="box_app3" >
+                        <h3>Ce que vous allez apprendre</h3>
+                        <ul>
+                            <li>
+                                Comprendre la théorie derrière l'intelligence artificielle
+                            </li>
+                            <li>
+                                Construisez de nombreux modèles d'apprentissage automatique
+                            <li>
+                                Implémenter des modèles d'apprentissage automatique dans des projets
+                            </li>
+                        </ul>
+                    </div>
+                    <tr onmouseover="apparaitre4();" onmouseout="disparaitre4();">
+                        <td>
+                            <img src="formation/AI/M9.jfif" width="300" height="200">
+                        </td>
+                        <td>
+                            <h2>Apparentissage automatique: Machine à vecteurs de support <abbr title="Support vector machine">"SVM"</abbr> en python</h2>
+                            <p>
+                                Apprenez des algorithmes d'apprentissage automatique  en Python pour la classification et la regression 
+                                <h5>9 heures au total.Avancée</h5>
+                                <span>
+                                    <h4>89.99dt</h4>
+                                </span>   
+                            </p>
+                        </td>
+                    </tr>
+                    <div class="container_box4" id="box_app4" >
+                        <h3>Ce que vous allez apprendre</h3>
+                        <ul>
+                            <li>
+                                Apprenez les bases du Machine Learning
+                            </li>
+                            <li>
+                                Apprenez les bases de la machine à vecteurs de support (SVM)
+                            </li>
+                            <li>
+                                Apprenez les bases des discriminants linéaires
+                            </li>
+                        </ul>
+                    </div>
+                </table>
+            </article>
+        </section>
+        <footer>
+            <ul class="ul2">
+                <li>DEAcademy Business</li>
+                <li>Enseigner sur DEAcademy</li>
+                <li>Téléchargez l'application</li>
+                <li>À propos DEAcademy</li>
+                <li>Contactez-nous</li>
+            </ul>
+            <ul class="ul2">
+                <li>Carrières</li>
+                <li>Blog</li>
+                <li>Aide et support</li>
+            
+            </ul>
+            <ul class="ul2">
+                <li>Conditions</li>
+                <li>Politique de confidentialité</li>
+                <li>Plan du site</li>
+            </ul>
+          
+        </footer>
+    </body>
+</html>

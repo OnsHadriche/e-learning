@@ -1,0 +1,94 @@
+.Inscription_page{
+    font-family: 'Hammersmith One', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    width:500px ;
+    height: 850px;
+    position: absolute;
+    left: 380px;
+    margin: 30px;
+    box-shadow: 0px 0px 2px 2px  rgba(128, 128, 128, 0.507);
+}
+.Inscription_page form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Inscription_page form div{
+    display: flex;
+    flex-direction: column;
+}
+.Inscription_page h1{
+    margin: 20px 0;
+    
+}
+.Adresse{
+    position: relative;
+    left: 11px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    color: rgb(13, 83, 148);
+    font-weight: bold;
+}
+.MotDp{
+    position: relative;
+    left: 11px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    color: rgb(13, 83, 148);
+    font-weight: bold;
+}
+.Inscription_page form input{
+    width: 400px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 5px 5px 5px 5px;
+    margin: 10px 0 0 10px;
+}
+#ligne_hori{
+    border: none;
+    border-top: 0.1px solid rgba(51, 51, 51, 0.295) ;
+    width: 350px;
+    overflow: visible;
+    text-align: center;
+    height: 1px;
+    position: relative;
+    top: 9px;
+}
+#ligne_hori::after{
+    font-size: 15px;
+    padding:0 4px;
+    background: rgba(255, 255, 255, 0.849);
+    content: 'ou';
+    position: relative;
+    top:-10px;
+}
+.footer_compte_1{
+    position: absolute;
+    top:900px;
+    width: 1337px;
+    background-color: rgb(27, 66, 124);
+    color: white;
+    display: flex;
+    justify-content:flex-start; 
+    height: 200px; 
+}
+.title_footer_1{
+    font-family: 'Roboto' sans-serif;
+    position: relative;
+    top: 10px;
+   
+
+}
+
+.ul2{
+    font-family: 'Roboto' sans-serif;
+    text-align: justify;
+    list-style: none;
+    font-size: 13pt;
+}
+

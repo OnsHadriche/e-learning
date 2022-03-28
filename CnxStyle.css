@@ -1,0 +1,31 @@
+.Titre_cnx{
+    border: 2px solid white;
+    border-bottom:5px gainsboro;
+    position: relative;
+    top: 50px;
+    font-size: 12pt;
+    font-family: "Roboto Slab",Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    color: dodgerblue; ;
+}
+.a{
+    width:500px;
+    padding: 50px;
+    position: absolute;
+    top:350px;
+    left:550px;
+    font-family: arial;
+    
+}
+@font-face{
+    font-family:"Roboto Slab";
+    src:url("font/RobotoSlab-VariableFont_wght.ttf")
+}
+img#ident{
+    position: relative;
+    top: 50px;
+    left: 600px;
+    width: 120px;
+    height: 120px;
+}

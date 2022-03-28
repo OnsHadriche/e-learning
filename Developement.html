@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Développement Web</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="DevpWeb.css">
+        <link rel="stylesheet" href="HomeStyle3.css">
+    </head>
+    <body>
+        <header class="header_main">
+            
+            <nav>
+                <a href="Home3.html" >
+
+                    <img src="logo\DEAcademy.PNG" width="160" height="160" id="logo">
+                </a>
+                <ul class="ulx">
+                    <li id="button_recherche">
+                        <input type="text"  placeholder="Rechercher" class="text_btn">
+                        <a href="#" class="recherche_btn" ><i class="fas fa-search"></i></a>
+                    </li>
+                    <li >
+        
+                        <button class="c" onclick="drop();" onblur="hold();" id="textColor">Cours</button>
+                        <ul class="Catégories" id="dropDoawn1">
+                            <li><a href="Developement.html">Développement</a></li>
+                            <li><a href="">Business</a> </li>
+                            <li><a href="">Finance et comptabilité </a></li>
+                            <li><a href="">Informatique et logiciels</a></li>
+                            <li><a href="">Productivité bureatique</a></li>
+                            <li><a href="Devep_Personnel.html">Développement personnel</a></li>
+                            <li><a href="design.html">Design</a></li>
+                            <li><a href="">Marketing</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="DEAcademy pour entreprises.html" target="_blank">
+                            <button class="c" onmouseover="clickOn();" onmouseout="clickOff();" id="ClickEntreprise">DEAcademy pour Entreprise</button>
+                        </a>
+                    </li>
+    
+                    <li >
+                        <a href="Enseigner.html" target="_blank">
+                            <button class="c" onmouseover="clickOn1();" onmouseout="clickOff1();" id="ClickEntreprise1">Enseigner sur DEAcademy</button>
+                        </a>
+                    </li>
+                    <li id="panier">
+                        <i class="fas fa-shopping-cart" title="Panier"></i>
+                    </li>
+                    <a href="connexion.html" target="_blank">
+                        <li> <button id="a"> connecter </button></li>
+                    </a>  
+                    <a href="inscription.html" target="_blank">
+                        <li><button id= "a">S'inscrire</button></li>
+                    </a>
+                </ul>
+            </nav>
+        </header>
+        <div class="container_titre">
+                
+            <h1 id="Grand_titre">Développement Web</h1>
+            <p id="pg_titre">Découvrez nos cours </p>
+        </div>
+        <section class="Choix">
+            <aside class="aside_1">
+                <h3 class="filtre">Filtrer par</h3>
+                <div class="conatainer_group">
+                    <h3 class="filtre">Théme</h3>
+                    <div>
+                        <a href="#ML">
+                            <input type="checkbox" id="ML">
+                            <label for="ML">C#</label>
+                        </a>
+                        <br>
+                        <input type="checkbox" id="DL">
+                        <label for="DL">CSS</label>
+                        <br>
+                        <input type="checkbox" id="SD">
+                        <label for="SD">HTML</label>
+                        <br>
+                        <input type="checkbox" id="AD">
+                        <label for="AD">PHP</label>
+                        <br>
+                        <input type="checkbox" id="BD">
+                        <label for="BD">Python</label>
+                        <br>
+                        <input type="checkbox" id="VO">
+                        <label for="VO">Django</label>
+                        <br>
+                        <input type="checkbox" id="Rb">
+                        <label for="Rb">JavaScript</label>
+                    </div>
+                    <h3 class="filtre">Niveau</h3>
+                    <div>
+                        <input type="checkbox" id="TN">
+                        <label for="TN">Tous les niveaux</label>
+                        <br>
+                        <input type="checkbox" id="Debut">
+                        <label for="Debut">Débutant</label>
+                        <br>
+                        <input type="checkbox" id="Inter">
+                        <label for="Inter">Intermédiare</label>
+                        <br>
+                        <input type="checkbox" id="Av">
+                        <label for="Av">Avancée</label>
+                    </div>
+                    <h3 class="filtre">Langue</h3>
+                    <div>
+                        <input type="checkbox" id="Ar">
+                        <label for="Ar">Arabe</label>
+                        <br>
+                        <input type="checkbox" id="Fr">
+                        <label for="Fr">Français</label>
+                        <br>
+                        <input type="checkbox" id="Ang">
+                        <label for="Ang">Anglais</label>
+                    </div>
+                    <h3 class="filtre">Mode d'apprentissage</h3>
+                    <div>
+                        <input type="checkbox" id="Appr">
+                        <label for="Appr">Cours</label>
+                        <br>
+                        <input type="checkbox" id="Sp">
+                        <label for="Sp">Spécialisation</label>
+                        <br>
+                        <input type="checkbox" id="Pg">
+                        <label for="Pg">Projets guidés</label>
+                    </div>
+                    <h3 class="filtre">Prix</h3>
+                    <div>
+                        <input type="checkbox" id="Pay">
+                        <label for="Pay">Payant</label>
+                        <br>
+                        <input type="checkbox" id="Grat">
+                        <label for="Grat">Gratuit</label>
+                    </div>
+                </div>
+            </aside >
+            <article class="cours_choix">
+                <table>
+                    <tr>
+                        <td>
+                            <img src="formation/Devp_Web/c.jpg" width="300" height="200">
+                        </td>
+                        <td> 
+
+                            <h2>Apprendre à programmer en C#</h2>
+                            <p>
+                                Apprenez les bases du langage C# par la pratique
+                                <h5>8 heures au total. Débutant.</h5>
+                                <h4>90.99dt</h4>
+                            </p>
+                            <!--
+                                <div class="container_box">
+                                    <div class="contenu_box">
+                                        <h3>Ce que vous allez apprendre</h3>
+                                        <ul>
+                                            <li>
+                                                Comprendre l'importance de l'apprentissage automatique 
+                                                <abbr title="Machine Learning">"ML"</abbr>
+                                            </li>
+                                            <li>
+                                                Apprendre à implimenter les algorithmes de base de l'apprentissage automatique en Python
+                                            </li>
+                                            <li>
+                                                appliquer les algorithmes de classification et de regression 
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            -->
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="formation/Devp_Web/css.png" width="300" height="200">
+                        </td>
+                        <td>
+                            <h2>Le CSS de A-Z</h2>
+                            <p>
+                              Apprenez à styliser vos pages Web.
+                                <h5>7 heures au total. Tous les niveaux.</h5>
+                                <span>
+                                    <h4>89.99dt</h4>
+                                </span>   
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="formation/Devp_Web/developweb.png" width="300" height="200">
+                        </td>
+                        <td>
+                            <h2>Cours développemnt web complet : HTML, CSS et JavaScript</h2>
+                            <p>
+                                Apprenez les langages HTML, CSS et JavaScript pour construire un site web professionnel
+                                <h5>24 heures au total.Tous les niveaux</h5>
+                                <span>
+                                    <h4>129.99dt</h4>
+                                </span>   
+                            </p>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="formation/Devp_Web/java.png" width="300" height="200">
+                        </td>
+                        <td>
+                            <h2>Animation de plusieurs menus en JavaScript</h2>
+                            <p> Créez des animations géniales.
+                                <h6>4 heures au total. Intermédiare</h6>
+                                <span>
+                                    <h4>39.99dt</h4>
+                                </span>   
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="formation/Devp_Web/java1.png" width="300" height="200">
+                        </td>
+                        <td>
+                            <h2>JavaScript pour Débutant: Guide complet</h2>
+                            <p>
+                                Un guide spécialisée pour apprendre la langage JavaScript et rendre vos pages Web animés et interactives 
+                                <h5>9 heures au total.Débutant</h5>
+                                <span>
+                                    <h4>90.99dt</h4>
+                                </span>   
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="formation/Devp_Web/php.jfif" width="300" height="200">
+                        </td>
+                        <td>
+                            <h2>PHP Orienté Objet à partir zéro </h2>
+                            <p>
+                                Cours complet et facile à maîtriser <strong>PHP</strong> Orienté Objet 
+                                <h5>9 heures au total.Tous les niveaux</h5>
+                                <span>
+                                    <h4>99.99dt</h4>
+                                </span>   
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="formation/Devp_Web/site web.jpg" width="300" height="200">
+                        </td>
+                        <td>
+                            <h2>Introduction au Développement Web </h2>
+                            <p>
+                                Présenter les ensembles de développemnt Web  : HTML, CSS, JavaScript, Php et Boostrap.
+                                <h5>1 heure au total.Tous les niveaux</h5>
+                                <span>
+                                    <h4>Gratuit</h4>
+                                </span>   
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+
+            </article>
+        </section>
+        <footer>
+            <ul class="ul2">
+                <li>DEAcademy Business</li>
+                <li>Enseigner sur DEAcademy</li>
+                <li>Téléchargez l'application</li>
+                <li>À propos DEAcademy</li>
+                <li>Contactez-nous</li>
+            </ul>
+            <ul class="ul2">
+                <li>Carrières</li>
+                <li>Blog</li>
+                <li>Aide et support</li>
+            
+            </ul>
+            <ul class="ul2">
+                <li>Conditions</li>
+                <li>Politique de confidentialité</li>
+                <li>Plan du site</li>
+            </ul>
+          
+        </footer>
+    </body>
+</html>
